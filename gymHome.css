@@ -1,0 +1,58 @@
+/* CSS for home page */
+body {
+    background-image: url('pexels-leon-ardho-1552242.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #333;
+    padding: 10px; 
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /*padding for navigation bar*/
+  }
+  
+  /* Style the links in different positions */
+  .nav-left {
+    order: 1; /* order of the left section to 1 (starts from 1) */
+  }
+  
+  .nav-middle {
+    order: 2; /* order of the middle section to 2 */
+  }
+  
+  .nav-right {
+    order: 3; /* order of the right section to 3 */
+  }
+  #content {
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* CSS for footer section */
+/*.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left, .footer-right {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
