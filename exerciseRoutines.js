@@ -1,6 +1,8 @@
-//creating exercises to choose from
-const exerciseRoutines = {
-    strength: ["Push-ups", "Pull-ups", "Squats", "Deadlifts"],
-    cardio: ["Running", "Cycling", "Jumping Jacks", "Burpees"],
-    flexibility: ["Yoga", "Stretching", "Pilates", "Tai Chi"]
-  };
+function loadBrowseRoutines() {
+  const routines = fetchRoutines();
+  const routineList = document.getElementById("content");
+  routineList.innerHTML = "<h2>Browse Exercise Routines by Category</h2>";
+  routines.forEach(routine => {
+    routineList.innerHTML += `<p>${routine}</p>`;
+  });
+}
